@@ -1,0 +1,580 @@
+html {
+	min-width: 1220px;
+}
+body {
+	margin: 0;
+}
+img, input, select, textarea, button {
+	border: none;
+	outline: none;
+}
+h1 {
+	font-size: 30px;
+	margin: 10px 0 0;
+}
+h2 {
+	font-size: 25px;
+	text-align: center;
+	margin: 20px 0 10px;
+}
+h3 {
+	font-size: 22px;
+}
+h4 {
+	font-size: 19px;
+}
+h5 {
+	font-size: 16px;
+}
+h6 {
+	font-size: 14px;
+}
+ul, ol {
+	margin: 3px 0;
+}
+p {
+	margin: 15px 0;
+}
+a {
+	color: #0278c9;
+}
+a:hover {
+	text-decoration: none;
+}
+#container {
+	width: 1200px;
+	margin: auto;
+	padding: 0 10px;
+	font: 14px Tahoma, Arial, sans-serif;
+	color: #000;
+}
+.clear {
+	clear: both;
+}
+.sin {
+	background: #0278c9;
+}
+.kras {
+	background: #d34537;
+}
+.zel {
+	background: #4b9602;
+}
+.oran {
+	background: #db8600;
+}
+.cher {
+	background: #000;
+}
+
+/* ШАПКА */
+#up_header {
+	height: 3px;
+	
+}
+#up_header > div {
+	display: inline-block;
+	width: 298px;
+	height: 3px;
+	margin-left: 2px;
+	vertical-align: top;
+	
+}
+#up_header > div:first-child {
+	width: 300px;
+	margin-left: 0;
+}
+#header {
+	margin-top: 15px;
+}
+#logo {
+	float: left;
+	width: 49%;
+	margin-bottom: 15px;
+}
+#logo > a {
+	display: block;
+	height: 100%;
+}
+#cont {
+	float: right;
+	width: 49%;
+	text-align: right;
+	font-size: 26px;
+	margin-top: 3px;
+}
+#cont > span {
+	font-size: 16px;
+	vertical-align: 10px;
+}
+
+/* главное меню */
+#nav ul {
+	margin: 0;
+	padding: 0;
+}
+#nav > ul > li {
+	display: inline-block;
+	width: 198px;
+	height: 40px;
+	text-align: center;
+	margin-left: 2px;
+}
+#nav > ul > li:first-child {
+	margin-left: 0;
+	width: 200px;
+}
+#nav ul > li > a {
+	display: block;
+	height: 100%;
+	text-decoration: none;
+	font-size: 16px;
+	color: #fff;
+	line-height: 40px;
+}
+#nav > ul > li:hover > a, .current {
+	background: rgba(255, 255, 255, 0.15);
+}
+
+/* ПОДВАЛ */
+#footer {
+	color: #fff;
+}
+#footer > .footer_in {
+	display: inline-block;
+	width: 298px;
+	height: 178px;
+	margin-left: 2px;
+	vertical-align: top;
+}
+#footer > .footer_in:first-child {
+	margin-left: 0;
+	width: 300px;
+}
+#footer > .footer_in > p {
+	font-size: 16px;
+	text-transform: uppercase;
+	margin: 15px 0 5px 65px;
+}
+#footer > .footer_in > ul {
+	margin-left: 40px;
+}
+#footer > .oran > ul {
+	margin-left: 3px;
+}
+#footer > .footer_in > ul >li {
+	margin-bottom: 8px;
+}
+#footer > .footer_in a {
+	text-decoration: none;
+	color: #fff;
+}
+#footer > .footer_in a:hover {
+	text-decoration: underline;
+}
+#footer_sub {
+	background: #000;
+	margin-top: 2px;
+	padding: 8px 10px;
+}
+#footer_sub_left {
+	float: left;
+	margin-top: 13px;
+}
+#footer_sub_right {
+	float: right;
+	text-align: right;
+	font-size: 18px;
+}
+
+/* фон с всплывающей формой */
+#bg_popup {
+	width: 100%;
+	height: 100%;
+	background: url("../images/pattern.png"), rgba(255, 255, 255, 0.8);
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: none;
+}
+#forma_popup {
+	width: 330px;
+	background: #000;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	font-family: Tahoma, Arial, sans-serif;
+	padding: 5px 20px 20px;
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	margin-left: -185px;
+	z-index: 2;
+	display: none;
+}
+#forma_popup > span  {
+	display: block;
+	width: 19px;
+	height: 15px;
+	background: url("../images/krest.png") no-repeat 100% 0;
+	position: relative;
+	left: 327px;
+}
+#forma_popup > span:hover  {
+	background-position: 100% 100%;
+	cursor: pointer;
+}
+#forma_popup > div  {
+	color: #fff;
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	margin-top: 2px;
+}
+#forma_popup > label  {
+	width: 330px;
+	color: #fff;
+	font-size: 16px;
+	display: inline-block;
+	text-align: left;
+	margin: 5px 0 2px;
+}
+#forma_popup  > input[type="text"] {
+	width: 315px;
+	height: 30px;
+	font-size: 15px;
+	padding-left: 7px;
+	padding-right: 7px;
+}
+#forma_popup  > textarea {
+	width: 315px !important;
+	height: 95px !important;
+	font: 15px Tahoma, Arial, sans-serif;
+	padding: 3px 7px;
+	overflow: hidden;
+}
+#forma_popup  > button {
+	display: block;
+	width: 120px;
+	height: 35px;
+	background: #db8600;
+	color: #fff;
+	font-size: 16px;
+	margin: 18px auto 0;
+}
+#forma_popup  > button:hover {
+	background: #e09826;
+	cursor: pointer;
+}
+
+
+/* КОНТЕНТ */
+#content {
+	padding: 10px 0 15px;
+}
+
+/* ссылки на разделы */
+#tovar {
+	margin-top: 20px;
+	text-align: center;
+}
+#dvs_leg {
+	background: url("../images/dvs_leg.jpg") no-repeat 50% 50%;
+	background-size: 290px 250px;
+	margin-right: 8px;
+}
+#kpp_leg {
+	background: url("../images/kpp_leg.jpg") no-repeat 50% 50%;
+	background-size: 290px 250px;
+	margin-right: 8px;
+}
+#dvs_gr {
+	background: url("../images/dvs_gr.jpg") no-repeat 50% 50%;
+	background-size: 290px 250px;
+	margin-right: 8px;
+}
+#cab {
+	background: url("../images/cab.jpg") no-repeat 50% 50%;
+	background-size: 290px 250px;
+}
+#tovar > div {
+	width: 290px;
+	height: 250px;
+	display: inline-block;
+	position: relative;
+	transition: background-size 0.4s ease-in;
+	-webkit-transition: background-size 0.4s ease-in;
+}
+#tovar > div:hover {
+	background-size: 350px 302px;
+}
+#tovar > div > a {
+	display: block;
+	height: 100%;
+	color: #fff;
+}
+#tovar > div > a > span {
+	display: block;
+	width: 100%;
+	background: rgba(2, 120, 201, 0.7);
+	font-size: 16px;
+	padding: 5px 0;
+	position: absolute;
+	bottom: 0;
+	transition: all 0.2s ease-in;
+	-webkit-transition: all 0.2s ease-in;
+}
+#tovar > div:hover > a > span {
+	padding: 10px 0;
+	background: rgb(2, 120, 201);
+}
+
+/* быстрая консультация */
+#bistr_cons {
+	background: #000;
+	color: #fff;
+	font-size: 16px;
+	padding: 15px 0;
+	text-align: center;
+}
+#bistr_cons > label {
+	margin-right: 30px;
+}
+#bistr_cons input[type="text"] {
+	width: 250px;
+	height: 23px;
+	font-size: 15px;
+	margin-left: 10px;
+	padding-left: 5px;
+	padding-right: 5px;
+}
+#bistr_cons > label > span {
+	display: inline-block;
+	width: 250px;
+	height: 25px;
+	background: url("../images/oran_str.png") no-repeat 100% 0 #fff;
+	margin-left: 10px;
+	overflow: hidden;
+	vertical-align: -7px;
+}
+#bistr_cons > label > span:hover {
+	background-position: 100% 100%;
+}
+#bistr_cons select {
+	width: 270px;
+	height: 25px;
+	background-color: transparent;
+	font-size: 15px;
+	cursor: pointer;
+}
+#bistr_cons button {
+	width: 100px;
+	height: 30px;
+	font-size: 16px;
+	background: #db8600;
+	color: #fff;
+}
+#bistr_cons button:hover {
+	background: #e09826;
+	cursor: pointer;
+}
+
+/* таблица марок */
+#marki_auto {
+	width: 100%;
+	text-align: center;
+}
+#marki_auto td {
+	padding-bottom: 30px;
+}
+#marki_auto img:hover {
+	opacity: 0.8;
+}
+#marki_auto span {
+	display: block;
+}
+#p_end {
+	text-align: center;
+	font-size: 16px;
+	font-weight: bold;
+	margin: 15px 0 5px;
+}
+
+/* фильтры */
+#filter{
+	background: #000;
+	margin: auto;
+	text-align: center;
+	padding: 13px 0 10px;
+}
+#filter > div {
+	width: 180px;
+	background: url("../images/oran_str.png") no-repeat 100% 0 #fff;
+    display: inline-block;
+    height: 25px;
+    margin-left: 20px;
+    overflow: hidden;
+}
+#filter > div:first-child {
+    margin-left: 0;
+}
+#filter > div:hover {
+	background-position: 100% 100%;
+}
+#filter > div > select {
+	width: 200px;
+    height: 25px;
+	background-color: transparent;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+/* таблица вывода */
+#perechen {
+	width: 100%;
+	border-collapse: collapse;
+	margin-bottom: 15px;
+}
+#perechen tr:nth-child(odd) {
+	background: #f2f2f2;
+}
+#perechen th {
+	background: #d9d9d9;
+	border: 1px solid #e5e5e5;
+	padding: 8px 5px;
+	font-size: 13px;
+	white-space: nowrap;
+}
+#perechen td {
+	text-align: center;
+	padding: 10px 5px;
+	border: 1px solid #e5e5e5;
+}
+#perechen span {
+	padding: 3px 10px 5px;
+	color: #fff;
+	font-size: 14px;
+}
+#perechen span:hover {
+	background: #da6155;
+	cursor: pointer;
+}
+#perechen img {
+	width: 100px;
+	border: 1px solid transparent;
+}
+#perechen img:hover {
+	opacity: 0.8;
+	border: 1px solid #d34537;
+	cursor: pointer;
+}
+#pos_vse {
+	width: 140px;
+	color: #fff;
+	text-align: center;
+	padding: 6px 0 8px;
+	margin: auto;
+}
+#pos_vse:hover {
+	background: #288cd1;
+	cursor: pointer;
+}
+
+/* Слайдер */
+#bg_slider {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 0.5);
+	position: fixed;
+	top: 0;
+	z-index: 1;
+	display: none;
+}
+#slider_popup {
+	width: 600px;
+	background: #FFF;
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	font-family: Tahoma, Arial, sans-serif;
+	padding: 3px 3px 18px;
+	position: fixed;
+	top: 15%;
+	left: 50%;
+	margin-left: -285px;
+	z-index: 2;
+	display: none;
+}
+#slider_popup #images_close  {
+	position: relative;
+	height: 15px;
+	z-index: 3;
+	background: url("../images/krest.png") no-repeat 100% 0;
+	right: 4px;
+	top:6px;
+}
+#slider_popup #images_close:hover  {
+	background-position: 100% 100%;
+	cursor: pointer;
+}
+
+/* фон с всплывающим алертом */
+#bg_popup_alert {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	background: rgba(255, 255, 255, 0.9);
+	z-index: 2;
+}
+#popup_alert {
+	position: fixed;
+	width: 100%;
+	top: 35%;
+	font-size: 26px;
+	font-weight: bold;
+	color: #c52a3c;
+	text-align: center;	
+}
+.error_masages{
+	text-align: center;
+}
+.error_404{
+	margin:200px 0;
+}
+
+/* Стрелки перелистывания картинок */
+#images_slider_controls a.arrow_next, #images_slider_controls a.arrow_prev {
+    background-image: url("../images/arrows.png");
+    display: block;
+    height: 22px;
+    margin-top: -15px;
+    position: absolute;
+    top: 50%;
+    width: 18px;
+    z-index: 60;
+}
+#images_slider_controls a.arrow_next {
+    background-position: 100% 0;
+    right: 15px;
+}
+#images_slider_controls a.arrow_prev {
+    background-position: 0 0;
+    left: 15px;
+}
+#images_slider_controls a.arrow_next:hover {
+    background-position: 100% 100%;
+}
+#images_slider_controls a.arrow_prev:hover {
+    background-position: 0 100%;
+}
+
+/* таблица отзывов */
+#otzivi td {
+	width: 33%;
+	vertical-align: top;
+}
+#otzivi h4 {
+	text-align: center;
+	margin: 0 0 10px;
+}
+#otzivi img {
+	float: left;
+	margin-right: 10px;
+}
